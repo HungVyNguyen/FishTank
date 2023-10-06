@@ -19,11 +19,11 @@ public class Varelerger {
             System.out.print("Indtast titel: ");
             String title = scanner.nextLine();
 
-            if ("bog".equalsIgnoreCase(type)) {
+            if (type.equalsIgnoreCase("bog")) {
                 System.out.print("Indtast forfatter: ");
                 String author = scanner.nextLine();
                 loanItems[i] = new Book(title, author);
-            } else if ("video".equalsIgnoreCase(type)) {
+            } else if (type.equalsIgnoreCase("video")) {
                 System.out.print("Indtast varighed (i minutter): ");
                 int duration = scanner.nextInt();
                 scanner.nextLine(); // Tøm bufferen

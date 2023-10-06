@@ -21,7 +21,6 @@ public class Fakturaen {
         setOrdrenummber(ordrenummber);
         setFakturaudsteder(fakturaudsteder);
         setFaktiramodtager(faktiramodtager);
-        setFaktiramodtager(faktiramodtager);
         setFakturedato(fakturedato);
         setForfaldsdato(forfaldsdato);
         this.fakturalinjes = new ArrayList<>();
@@ -103,9 +102,9 @@ public class Fakturaen {
                 ", fakturedato=" + fakturedato +
                 ", forfaldsdato=" + forfaldsdato +
                 ", ordrenummber=" + ordrenummber +
-                ", moms=" + moms +
+                ", moms=" + getMoms() +
                 ", subtotalUdenMoms=" + subtotalUdenMoms +
-                ", total=" + total +
+                ", total=" + getTotal() +
                 '}';
     }
 }
